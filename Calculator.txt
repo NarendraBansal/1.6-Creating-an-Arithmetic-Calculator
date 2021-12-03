@@ -1,0 +1,29 @@
+package simplilearnclasspractice;
+import java.util.Scanner;
+public class Calculator {
+    //Calculator : Write a program to add, subtract, divide and multiplication of two inters 
+    void addition(int i, int j){
+        System.out.println("Addition is " + (i+j));
+    }
+   void substraction (int i, int j){
+       System.out.println("Substraction is " + (i-j));
+   }
+   void division(int i, int j){
+       System.out.println("Devision is "+ (i/j));
+   }
+   void multiplication (int i, int j){
+       System.out.println("Multiplication is "+ (i*j));
+   }
+   public static void main(String[] args) {
+      Calculator test = new Calculator(); 
+      Scanner ob = new Scanner (System.in);
+        System.out.println("Enter the first digit number A");
+        int a = ob.nextInt(); 
+        System.out.println(" Enter the second digit number B");
+        int b = ob.nextInt();
+        test.addition(a, b);
+        test.substraction(a, b);
+        test.division(a, b);
+        test.multiplication(a, b);
+    }
+}
